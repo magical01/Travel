@@ -30,6 +30,11 @@
     width: 100px;
     height: 100px;
     background-color: var(--orange-color);
+    transition: all .3s;
+
+    &:hover {
+      background-color: var(--main-color);
+    }
 
     svg {
       width: 60px;

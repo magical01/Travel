@@ -2,7 +2,7 @@
   padding-bottom: 80px;
 
   &__container {
-    height: auto;
+    padding: 0;
   }
 
   &__content {
@@ -12,6 +12,9 @@
 
   &__slide {
     text-align: center;
+    width: 800px !important;
+    transform: translateX(37.5%);
+    cursor: pointer;
   }
 
   &__pagination {
@@ -20,14 +23,18 @@
   }
 
   &__more-inner {
+    margin-top: 39px;
     text-align: center;
   }
 
   &__more {
     display: inline-flex;
     align-items: center;
-    margin-top: 40px;
-    padding: 14px 31px;
+    padding: 10px 32px;
+
+    &:hover {
+      background-color: var(--orange-color);
+    }
 
     svg {
       margin-right: 10px;
@@ -50,7 +57,7 @@
     &__text {
       position: absolute;
       left: 15px;
-      bottom: 40px;
+      bottom: 85px;
       font-size: 32px;
       line-height: 42px;
       color: var(--light-color);
@@ -73,5 +80,5 @@
 
 .destinations__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
   z-index: 15;
-  bottom: 30px;
+  bottom: 20px;
 }

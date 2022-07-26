@@ -54,6 +54,11 @@
 
   &__link {
     padding: 14px 33px;
+
+    &:hover {
+      color: var(--light-color);
+      background-color: var(--orange-color);
+    }
   }
 }
 

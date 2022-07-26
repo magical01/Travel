@@ -16,9 +16,15 @@
   }
 
   &__login {
-    padding: 12px 31px;
+    padding: 10px 31px;
     font-size: 16px;
     line-height: 21px;
+    transition: all .3s ease;
+
+    &:hover {
+      color: var(--main-color);
+      background-color: var(--light-color);
+    }
   }
 }
 
