@@ -1,0 +1,49 @@
+.steps {
+  &__container {
+    padding-top: 80px;
+    padding-bottom: 97px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 40px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &:nth-child(2) {
+      margin-left: 6%;
+    }
+  }
+
+  &__image {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--orange-color);
+
+    svg {
+      width: 60px;
+      height: 60px;
+      fill: var(--light-color);
+    }
+  }
+
+  &__text {
+    display: block;
+    font-family: 'Aleo';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--main-color);
+  }
+}
