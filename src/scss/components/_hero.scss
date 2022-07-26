@@ -1,0 +1,64 @@
+.hero {
+  position: relative;
+  height: 765px;
+  background-image: url("../img/hero2x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    padding-top: 122px;
+    padding-right: 407px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+    font-family: 'Aleo', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: var(--light-color);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 46px;
+    font-family: 'AleoItalic', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: var(--light-color);
+  }
+}
+
+.start-planning {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 18px 0;
+  padding-right: 19px;
+  padding-left: 41px;
+  background: rgba(255, 255, 255, 0.7);
+
+  &__text {
+    font-family: 'AleoItalic', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--orange-color);
+  }
+
+  &__link {
+    border-radius: 10px;
+    padding: 14px 33px;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--light-color);
+    background-color: var(--main-color);
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  }
+}
+

@@ -1,0 +1,60 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 23px;
+  }
+
+  &__login {
+    border-radius: 10px;
+    padding: 12px 31px;
+    color: var(--light-color);
+    background: var(--main-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    margin-right: 36px;
+  }
+
+  &__item {
+    color: var(--light-color);
+  }
+
+  &__item + &__item {
+    margin-left: 42px;
+  }
+
+  &__link {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: currentColor;
+      transition: all .2s ease-in-out;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+  }
+
+}
