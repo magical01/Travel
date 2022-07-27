@@ -1,17 +1,25 @@
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
   width: 100%;
   z-index: 20;
 
   &__container {
     display: flex;
     justify-content: space-between;
+
+    @include small-tablet {
+      justify-content: center;
+    }
   }
 
   &__span {
     font-size: 0;
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__text {
@@ -22,6 +30,10 @@
     font-size: 16px;
     line-height: 21px;
     color: var(--light-color);
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__item {
@@ -52,4 +64,5 @@
 .social {
   display: flex;
   justify-content: flex-end;
+
 }

@@ -3,11 +3,27 @@
 
   &__container {
     padding: 0;
+
+    @include xxl {
+      padding: 0 100px;
+    }
+
+    @include lg {
+      padding: 0 15px;
+    }
   }
 
   &__content {
     height: 844px;
     margin-top: 46px;
+
+    @include lg {
+      height: fit-content;
+    }
+
+    @include small-tablet {
+      margin-top: 20px;
+    }
   }
 
   &__slide {
@@ -15,6 +31,34 @@
     width: 800px !important;
     transform: translateX(37.5%);
     cursor: pointer;
+
+    &-inner {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      height: fit-content;
+    }
+
+    &-desktop {
+      @include mobile-mini {
+        display: none;
+      }
+    }
+
+    &-mobile {
+      display: none;
+
+      @include mobile-mini {
+        display: block;
+      }
+    }
+
+    @include xxl {
+      width: 100% !important;
+      transform: translateX(0);
+    }
   }
 
   &__pagination {
@@ -25,6 +69,10 @@
   &__more-inner {
     margin-top: 39px;
     text-align: center;
+
+    @include small-tablet {
+      margin-top: 0px;
+    }
   }
 
   &__more {
@@ -41,9 +89,37 @@
       width: 40px;
       height: 40px;
       fill: var(--light-color);
+
+      @include small-tablet {
+        width: 20px;
+        height: 20px;
+      }
+
+      @include mobile {
+        margin-right: 6px;
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    @include small-tablet {
+      padding: 10px 20px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include mobile {
+      padding: 8px 12px;
+      font-size: 11px;
+      line-height: 15px;
     }
   }
+
+  @include small-tablet {
+    padding-bottom: 30px;
+  }
 }
+
 
 .swiper {
   &-slide {
@@ -57,11 +133,18 @@
     &__text {
       position: absolute;
       left: 15px;
-      bottom: 85px;
+      bottom: 40px;
       font-size: 32px;
       line-height: 42px;
       color: var(--light-color);
       text-transform: uppercase;
+
+      @include small-tablet {
+        top: 15px;
+        bottom: auto;
+        font-size: 20px;
+        line-height: 26px;
+      }
     }
   }
 
@@ -75,10 +158,89 @@
     &-active {
       opacity: 1;
     }
+
+    @include lg {
+      width: 15px;
+      height: 15px;
+    }
+
+    @include mobile {
+      width: 8px;
+      height: 8px;
+    }
   }
 }
 
 .destinations__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
   z-index: 15;
   bottom: 20px;
+
+  @include lg {
+    bottom: 40px;
+  }
+}
+
+.destinations-next-btn {
+  display: none;
+  position: absolute;
+  right: 5px;
+  bottom: 50%;
+  z-index: 100;
+  transition: all .3s ease;
+
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--orange-color);
+    opacity: 0.5;
+  }
+
+  &:hover {
+    svg {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 1;
+    }
+  }
+
+  @include small-tablet {
+    display: block;
+  }
+}
+
+.destinations-prev-btn {
+  display: none;
+  position: absolute;
+  left: 5px;
+  bottom: 50%;
+  z-index: 100;
+  transition: all .3s ease;
+
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--orange-color);
+    transform: rotate(180deg);
+    opacity: 0.5;
+  }
+
+  &:hover {
+    svg {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 1;
+    }
+  }
+
+  @include small-tablet {
+    display: block;
+  }
 }

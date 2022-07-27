@@ -65,6 +65,10 @@
     }
   }
 
+  @include xxl {
+    background-image: url("../img/hero.jpg");
+  }
+
   @include small-tablet {
     height: 400px;
 

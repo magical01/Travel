@@ -10,5 +10,11 @@ const swiper = new Swiper('.destinations__content', {
     el: '.destinations__pagination',
     type: 'bullets',
     clickable: true,
+  },
+  navigation: {
+    nextEl: '.destinations-next-btn',
+    prevEl: '.destinations-prev-btn'
   }
+
+
 });

@@ -1,31 +1,62 @@
-<section class="destinations">
+<section class="destinations" id="destinations">
   <div class="container destinations__container">
     <h2 class="destinations__title title">Popular destinations</h2>
     <div class="swiper destinations__content">
+      <button class="destinations-next-btn btn-reset">
+        <svg>
+          <use xlink:href="img/sprite.svg#slider-right"></use>
+        </svg>
+      </button>
+      <button class="destinations-prev-btn btn-reset">
+        <svg>
+          <use xlink:href="img/sprite.svg#slider-right"></use>
+        </svg>
+      </button>
       <div class="swiper-wrapper">
          <div class="swiper-slide destinations__slide">
-            <picture>
-              <source srcset="img/spain.avif" type="image/avif">
-              <source srcset="img/spain.webp" type="image/webp">
-              <img loading="lazy" src="img/spain.jpg" class="image" width="800" height="800" alt="SPAIN">
-            </picture>
-            <span class="swiper-slide__text">Spain</span>
+            <div class="destinations__slide-inner">
+              <picture class="destinations__slide-desktop">
+                <source srcset="img/spain.avif" type="image/avif">
+                <source srcset="img/spain.webp" type="image/webp">
+                <img loading="lazy" src="img/spain.jpg" class="image" width="800" height="800" alt="SPAIN">
+              </picture>
+              <picture class="destinations__slide-mobile">
+                <source srcset="img/spain-mobile.avif" type="image/avif">
+                <source srcset="img/spain-mobile.webp" type="image/webp">
+                <img loading="lazy" src="img/spain-mobile.jpg" class="image" width="360" height="210" alt="SPAIN">
+              </picture>
+              <span class="swiper-slide__text">Spain</span>
+            </div>
          </div>
          <div class="swiper-slide destinations__slide">
-            <picture>
-              <source srcset="img/japan.avif" type="image/avif">
-              <source srcset="img/japan.webp" type="image/webp">
-              <img loading="lazy" src="img/japan.jpg" class="image" width="800" height="800" alt="JAPAN">
-            </picture>
-            <span class="swiper-slide__text">Japan</span>
+            <div class="destinations__slide-inner">
+                <picture class="destinations__slide-desktop">
+                  <source srcset="img/japan.avif" type="image/avif">
+                  <source srcset="img/japan.webp" type="image/webp">
+                  <img loading="lazy" src="img/japan.jpg" class="image" width="800" height="800" alt="JAPAN">
+                </picture>
+                <picture class="destinations__slide-mobile">
+                  <source srcset="img/japan-mobile.avif" type="image/avif">
+                  <source srcset="img/japan-mobile.webp" type="image/webp">
+                  <img loading="lazy" src="img/japan-mobile.jpg" class="image" width="360" height="210" alt="JAPAN">
+                </picture>
+                <span class="swiper-slide__text">Japan</span>
+            </div>
          </div>
          <div class="swiper-slide destinations__slide">
-            <picture>
-              <source srcset="img/usa.avif" type="image/avif">
-              <source srcset="img/usa.webp" type="image/webp">
-              <img loading="lazy" src="img/usa.jpg" class="image" width="800" height="800" alt="USA">
-            </picture>
-            <span class="swiper-slide__text">usa</span>
+            <div class="destinations__slide-inner">
+                <picture class="destinations__slide-desktop">
+                  <source srcset="img/usa.avif" type="image/avif">
+                  <source srcset="img/usa.webp" type="image/webp">
+                  <img loading="lazy" src="img/usa.jpg" class="image" width="800" height="800" alt="USA">
+                </picture>
+                <picture class="destinations__slide-mobile">
+                  <source srcset="img/usa-mobile.avif" type="image/avif">
+                  <source srcset="img/usa-mobile.webp" type="image/webp">
+                  <img loading="lazy" src="img/usa-mobile.jpg" class="image" width="360" height="210" alt="USA">
+                </picture>
+                <span class="swiper-slide__text">usa</span>
+            </div>
          </div>
       </div>
       <div class="destinations__pagination"></div>
