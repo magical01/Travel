@@ -44,6 +44,16 @@ a {
   color: var(--orange-color);
   text-align: center;
   text-transform: uppercase;
+
+  @include lg {
+    font-size: 30px;
+    line-height: 43px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 
@@ -98,6 +108,10 @@ a {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
+
+  @include lg {
+    padding: 0 15px;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

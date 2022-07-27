@@ -1,9 +1,10 @@
 <header class="header">
   <div class="container header__container">
     <a class="logo" href="">
-      <img loading="lazy" src="img/svg/logo.svg" width="216" height="31" alt="Travel Portal">
+      <img class="logo__desktop" loading="lazy" src="img/svg/logo.svg" width="216" height="31" alt="Travel Portal">
+      <img class="logo__mobile" loading="lazy" src="img/svg/logo-mobile.svg" width="29" height="30" alt="Travel Portal">
     </a>
-    <nav class="nav" title="Главное меню">
+    <nav class="nav" title="Главное меню" data-menu>
       <ul class="nav__list list-reset">
         <li class="nav__item"><a class="nav__link" href="#">How It Works</a></li>
         <li class="nav__item"><a class="nav__link" href="#">Plan Your Trip</a></li>
@@ -12,5 +13,8 @@
       </ul>
     </nav>
     <button class="header__login btn-reset main-link">Login</button>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+      <span class="burger__line"></span>
+    </button>
   </div>
 </header>
