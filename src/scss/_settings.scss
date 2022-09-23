@@ -167,15 +167,3 @@ a {
   transition: all .4s
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background: #fff;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: var(--main-color);
-}

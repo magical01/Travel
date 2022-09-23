@@ -1,0 +1,143 @@
+[data-aos="steps"] .steps__item:nth-child(1){
+  transform: translateX(-500px);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}
+[data-aos="steps"].aos-animate .steps__item:nth-child(1){
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: .4s;
+}
+
+[data-aos="steps"] .steps__item:nth-child(2){
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}
+[data-aos="steps"].aos-animate .steps__item:nth-child(2){
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: .4s;
+}
+
+[data-aos="steps"] .steps__item:nth-child(3){
+  transform: translateX(500px);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}
+[data-aos="steps"].aos-animate .steps__item:nth-child(3){
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: .4s;
+}
+//
+
+[data-aos="thailand"] .card__left {
+  transform: translateX(-500px);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+
+  @include tablet {
+    transform: translateX(-100px);
+  }
+}
+[data-aos="thailand"] .card__right {
+  transform: translateX(500px);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}
+[data-aos="thailand"].aos-animate .card__left {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: .4s;
+}
+[data-aos="thailand"].aos-animate .card__right {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: .4s;
+}
+
+
+[data-aos="utah"] .card__left {
+  transform: translateX(-500px);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+
+  @include tablet {
+    transform: translateX(-100px);
+  }
+}
+[data-aos="utah"] .card__right {
+  transform: translateX(500px);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}
+[data-aos="utah"].aos-animate .card__left {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: .8s;
+}
+[data-aos="utah"].aos-animate .card__right {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: .8s;
+}
+
+
+[data-aos="mountains"] .card__left {
+  transform: translateX(-500px);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+
+  @include tablet {
+    transform: translateX(-100px);
+  }
+
+}
+[data-aos="mountains"] .card__right {
+  transform: translateX(500px);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}
+[data-aos="mountains"].aos-animate .card__left {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: .8s;
+}
+[data-aos="mountains"].aos-animate .card__right {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: .8s;
+}
+
+
+[data-aos="longest"] .card__left {
+  transform: translateX(-500px);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+
+  @include tablet {
+    transform: translateX(-100px);
+  }
+
+}
+[data-aos="longest"] .card__right {
+  transform: translateX(500px);
+  opacity: 0;
+  transition: all .7s ease-in-out;
+}
+[data-aos="longest"].aos-animate .card__left {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: .8s;
+}
+[data-aos="longest"].aos-animate .card__right {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: .8s;
+}
+
+
+
+
+
