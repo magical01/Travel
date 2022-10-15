@@ -299,3 +299,11 @@
     }
   }
 }
+
+.graph-modal__close {
+  transition: opacity 0.3s;
+  &:hover {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+}
