@@ -1,0 +1,12 @@
+:root {
+  // base
+  --font-family: "RedHatText", sans-serif;
+  --content-width: 1200px;
+  --container-offset: 100px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --main-color: #0d606f;
+  --orange-color:  #f2785c;
+}

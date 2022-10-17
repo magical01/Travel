@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    <div class="shadow"></div>
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/hero.html')
+      @include('partials/steps.html')
+      @include('partials/destinations.html')
+      <div class="container">
+        <h2 class="stories__title title">
+          TRAVEL STORIES
+        </h2>
+      </div>
+      @include('partials/stories.html')
+    </main>
+
+    @include('partials/login.html')
+  </div>
+</body>
+
+</html>
