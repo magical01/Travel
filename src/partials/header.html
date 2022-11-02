@@ -1,8 +1,11 @@
 <header class="header">
   <div class="container header__container">
-    <a class="logo" href="">
-      <img class="logo__desktop" loading="lazy" src="img/svg/logo.svg" width="216" height="31" alt="Travel Portal">
-      <img class="logo__mobile" loading="lazy" src="img/svg/logo-mobile.svg" width="29" height="30" alt="Travel Portal">
+    <a class="logo" href="#">
+      <picture>
+        <source srcset="img/svg/logo-mobile.svg" width="29" height="30" alt="Travel Portal" media="(max-width: 576px)">
+        <img class="logo__desktop" loading="lazy" src="img/svg/logo.svg" width="216" height="31" alt="Travel Portal">
+      </picture>
+      <!-- <img class="logo__mobile" loading="lazy" src="img/svg/logo-mobile.svg" width="29" height="30" alt="Travel Portal"> -->
     </a>
     <nav class="nav" title="Главное меню" data-menu>
       <ul class="nav__list list-reset">
