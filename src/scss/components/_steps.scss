@@ -8,8 +8,16 @@
       padding-left: 15px;
     }
 
-    @include small-tablet {
+    @include mobile {
       padding: 20px 15px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @include mobile {
+      margin-bottom: 20px;
     }
   }
 
@@ -17,15 +25,11 @@
     display: flex;
     justify-content: space-between;
     padding: 0 12px;
-    margin-top: 40px;
 
     @include xxl {
       padding: 0px;
     }
 
-    @include small-tablet {
-      margin-top: 20px;
-    }
   }
 
   &__item {
@@ -45,9 +49,6 @@
       width: 30%
     }
 
-    @include mobile {
-      // width: 25%;
-    }
   }
 
   &__image {
@@ -89,6 +90,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
     color: var(--main-color);
 
     @include lg {

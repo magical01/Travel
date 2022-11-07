@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  top: -89px;
+  top: 0px;
   height: 765px;
   background-image: url("../img/hero2x.jpg");
   background-position: center;
@@ -10,6 +10,7 @@
   &__container {
     padding-top: 122px;
     padding-right: 407px;
+    padding-bottom: 200px;
 
     @include xxl {
       padding-right: 200px;
@@ -22,8 +23,17 @@
     @include lg {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       padding-right: 15px;
+    }
+
+    @include mobile {
+      padding-bottom: 100px;
+    }
+
+    @include mobile-mini {
+      padding-top: 142px;
+      padding-bottom: 61px;
     }
   }
 
@@ -37,15 +47,22 @@
     color: var(--light-color);
 
     @include xl {
-      font-size: 60px;
-      line-height: 66px;
-    }
-
-    @include lg {
-      max-width: 77%;
+      font-size: 76px;
+      line-height: 84px;
     }
 
     @include small-tablet {
+      font-size: 56px;
+      line-height: 66px;
+    }
+
+    @include mobile {
+      font-size: 38px;
+      line-height: 44px;
+      margin-bottom: 20px;
+    }
+
+    @include mobile-mini {
       display: none;
     }
   }
@@ -61,7 +78,13 @@
     letter-spacing: 0.5px;
     color: var(--light-color);
 
-    @include small-tablet {
+    @include mobile {
+      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include mobile-mini {
       display: none;
     }
   }
@@ -71,7 +94,7 @@
   }
 
   @include small-tablet {
-    height: 400px;
+    height: auto;
 
     &::before {
       content: "";
@@ -84,9 +107,6 @@
     }
   }
 
-  @include mobile {
-    height: 300px;
-  }
 }
 
 
@@ -101,6 +121,19 @@
   padding-right: 19px;
   padding-left: 41px;
   background: rgba(255, 255, 255, 0.7);
+
+  @include lg {
+    width: 100%;
+  }
+
+  @include small-tablet {
+    padding-left: 19px;
+  }
+
+  @include mobile {
+    padding: 12px;
+  }
+
 
   &__input {
     padding-right: 50px;
@@ -128,15 +161,23 @@
     }
 
     @include small-tablet {
+      padding-right: 10px;
       width: 65%;
       height: 30px;
-      padding-right: 10px;
     }
 
     @include mobile {
-      font-size: 14px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    @include mobile-mini {
+      padding-right: 0;
+      width: 60%;
+      font-size: 13px;
       line-height: 17px;
     }
+
   }
 
   &__text {
@@ -147,8 +188,8 @@
     color: var(--orange-color);
 
     @include mobile {
-      font-size: 14px;
-      line-height: 17px;
+      // font-size: 14px;
+      // line-height: 17px;
     }
   }
 
@@ -167,18 +208,15 @@
     }
 
     @include mobile {
-      padding: 8px 10px;
-      font-size: 11px;
+      padding: 8px 18px;
+      font-size: 12px;
       line-height: 15px;
     }
-  }
 
-  @include lg {
-    width: 100%;
-  }
-
-  @include mobile {
-    padding: 9px 9px 9px 10px;
+    @include mobile-mini {
+      padding: 8px 15px;
+      font-size: 11px;
+    }
   }
 }
 

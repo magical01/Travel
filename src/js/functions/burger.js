@@ -24,7 +24,7 @@ import { enableScroll } from '../functions/enable-scroll';
     }
   });
 
-  overlay?.addEventListener('click', () => {
+  shadow?.addEventListener('click', () => {
     burger?.setAttribute('aria-expanded', 'false');
     burger?.setAttribute('aria-label', 'Открыть меню');
     burger.classList.remove('burger--active');
